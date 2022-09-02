@@ -1,0 +1,34 @@
+.SumoSelect {display: block;width:100%;margin: 0 auto;cursor: pointer;z-index: 3;}
+.SumoSelect.open {z-index: 4 !important;}
+.SumoSelect:hover {z-index: 3;}
+.SumoSelect > .CaptionCont {width: 100%;cursor: pointer;padding: 0;border-radius: 0;border: 1px solid #E9E9E9;background-color: #fff;-webkit-transition: 0.25s;-o-transition: 0.25s;transition: 0.25s;}
+.SumoSelect.open .CaptionCont {border-radius:0;}
+.SumoSelect.open>.CaptionCont,.SumoSelect:focus>.CaptionCont,.SumoSelect:hover>.CaptionCont {border-color: #e0e0e0;box-shadow: none;}
+.SumoSelect > .optWrapper {top: -20px;right: -20px;left: -20px;padding:85px 0 0 0;width: auto;z-index: -1;border: none;background-color: #fff;box-shadow:none;transform-origin: top center;opacity: 0;visibility: hidden;-webkit-transition: 0.3s;transition: 0.3s;border-radius: 0;overflow: auto;}
+.SelectBox {font-size:16px;line-height: 1;color: #1A1A1A;height:60px;}
+.SumoSelect>.CaptionCont>span,.SumoSelect > .CaptionCont > span.placeholder {font-size: 16px;font-weight: 400;line-height:58px;padding: 0 50px 0 30px;color: #1A1A1A;font-style:normal;-webkit-backface-visibility: hidden;backface-visibility: hidden;cursor: pointer;}
+.SumoSelect.open > .CaptionCont > span.placeholder {opacity: 1;}
+.SumoSelect > .CaptionCont > label {cursor: pointer;width: 50px;height:60px;}
+.SumoSelect > .CaptionCont > label > i {background-image: none;opacity: 1;width: 10px;height: 10px;}
+.SumoSelect > .CaptionCont > label > i:before {content: '';position: absolute;left: 50%;top: 50%;width: 8px;height: 8px;margin-top: -1px;border-left: 1px solid #6D6D6D;border-bottom: 1px solid #6D6D6D;-webkit-transform: translate(-50%, -50%) rotate(-45deg);-ms-transform: translate(-50%, -50%) rotate(-45deg);transform: translate(-50%, -50%) rotate(-45deg);-webkit-transition: .3s;-o-transition: .3s;transition: .3s;}
+.SumoSelect.open > .CaptionCont > label > i:before {margin-top: 2px;-webkit-transform: translate(-50%, -50%) rotate(-225deg);-ms-transform: translate(-50%, -50%) rotate(-225deg);transform: translate(-50%, -50%) rotate(-225deg);}
+.SumoSelect.open > .optWrapper {opacity: 1;visibility: visible;top:-20px;}
+/*options*/
+.SumoSelect > .optWrapper > .options {border-radius:0;padding: 0 14px 0 20px;max-height:251px;margin-bottom: 20px;}
+.SumoSelect > .optWrapper > .options li.opt {border:1px solid #E9E9E9;padding:0;margin-top:-1px;}
+.SumoSelect>.optWrapper>.options>li.opt:first-child{border-radius:0;margin-top:0;}
+.SumoSelect > .optWrapper > .options li.opt:last-child {margin-bottom: 0;border-bottom:1px solid #E9E9E9}
+.SumoSelect > .optWrapper > .options li label {padding: 15px 30px;font-size: 16px;font-weight: 400;color: #1A1A1A;-webkit-transition: 0.25s;transition: 0.25s;}
+.SumoSelect>.optWrapper>.options li.opt:hover {background-color: transparent;}
+.options > .opt.disabled:first-child {display: none;}
+.SumoSelect.open .search-txt{padding: 0 50px 0 30px;border-radius: 0;line-height: 58px;font-size: 16px;font-weight: 400;color: #1A1A1A;}
+/*media*/
+@media(min-width: 1200px){
+  .SumoSelect>.optWrapper>.options li.opt:hover label {color: #fff;background:#C3010E;}
+}
+@media(max-width:767px){
+  .SelectBox{height:50px;}
+  .SumoSelect > .CaptionCont > label{height:50px;}
+  .SumoSelect>.CaptionCont>span, .SumoSelect > .CaptionCont > span.placeholder{padding-left:15px;line-height: 48px;}
+  .SumoSelect.open .search-txt{padding-left:15px;line-height:48px;}
+}

@@ -1,0 +1,27 @@
+{
+  "type": "module",
+  "name": "gulp_build",
+  "version": "1.0.0",
+  "dependencies": {
+    "autoprefixer": "^10.3.4",
+    "axios": "^0.24.0",
+    "browser-sync": "^2.27.5",
+    "css-mqpacker": "^7.0.0",
+    "del": "^6.0.0",
+    "font-face-generator": "^1.1.4",
+    "gulp": "^4.0.2",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-imagemin": "^8.0.0",
+    "gulp-postcss": "^9.0.1",
+    "gulp-sass": "^5.1.0",
+    "gulp-webp": "^4.0.1",
+    "imagemin-jpeg-recompress": "^7.0.0",
+    "imagemin-pngquant": "^9.0.2",
+    "postcss": "^8.3.6",
+    "sass": "^1.52.3"
+  },
+  "scripts": {
+    "build": "gulp build",
+    "start": "gulp start"
+  }
+}

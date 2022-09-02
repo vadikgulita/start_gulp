@@ -1,0 +1,5 @@
+@charset "UTF-8";
+@font-face{font-family:"Grold";src:local("☺"),url("../fonts/Grold/grold-light.woff2") format("woff2"),url("../fonts/Grold/grold-light.woff") format("woff"),url("../fonts/Grold/grold-light.ttf") format("truetype");font-weight:300;font-style:normal;font-display:swap}
+@font-face{font-family:"Grold";src:local("☺"),url("../fonts/Grold/grold-regular.woff2") format("woff2"),url("../fonts/Grold/grold-regular.woff") format("woff"),url("../fonts/Grold/grold-regular.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Grold";src:local("☺"),url("../fonts/Grold/grold-medium.woff2") format("woff2"),url("../fonts/Grold/grold-medium.woff") format("woff"),url("../fonts/Grold/grold-medium.ttf") format("truetype");font-weight:500;font-style:normal;font-display:swap}
+@font-face{font-family:"Grold";src:local("☺"),url("../fonts/Grold/grold-bold.woff2") format("woff2"),url("../fonts/Grold/grold-bold.woff") format("woff"),url("../fonts/Grold/grold-bold.ttf") format("truetype");font-weight:700;font-style:normal;font-display:swap}
