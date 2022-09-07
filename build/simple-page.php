@@ -218,7 +218,7 @@
             <div class="spacer-xl"></div>
         </div>
 
-        <!-- LEFT RIGHT -->
+        <!-- ACCORDION -->
         <div class="section">
             <div class="container">
                 <div class="row">
@@ -264,6 +264,28 @@
             <div class="spacer-xl"></div>
         </div>
 
+        <!-- PAGINATION -->
+        <div class="section">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-lg-6 offset-lg-3">
+                        <div class="custom-pagination">
+                            <a href="#" class="pagination-arrow arrow-left"><i></i></a>
+                            <ul>
+                                <li><a href="#">01</a></li>
+                                <li><a href="#">02</a></li>
+                                <li class="active"><a href="#">03</a></li>
+                                <li><a href="#">04</a></li>
+                                <li><a href="#">05</a></li>
+                            </ul>
+                            <a href="#" class="pagination-arrow arrow-right"><i></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="spacer-xl"></div>
+        </div>
+
 
 
         <!-- FOOTER -->
@@ -272,9 +294,7 @@
         </footer>
 
         <!-- POPUP -->
-        <div class="popup-wrapper">
-            <?php include '_popup.php';?>
-        </div>
+        <div class="popup-wrapper" id="popups"></div>
 
     </div>
 

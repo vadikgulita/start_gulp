@@ -1,53 +1,61 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
+
 <head>
-  <?php include '_top.php';?>
-  
-  <title>BES | 404</title>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" />
+    <meta name='robots' content='noindex,nofollow' />
+    <link href="css/bootstrap-grid.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/main.css" rel="stylesheet" type="text/css" />
+    <link rel="shortcut icon" href="img/favicon.ico" />
+    <title>404</title>
 </head>
-<body>
-   <!-- LOADER -->
-  <div id="loader-wrapper"></div>
 
-  <div id="content-block"> 
-    
-    <!-- HEADER -->
-    <?php include '_header.php';?>
+<body class="no-widget">
 
-    <div class="content-wrap">
-      <!-- 404 -->
-      <section class="not-found__section" data-section-name="OOPS! PAGE NOT FOUND">
-        <div class="not-found__code">404</div>
-        <div class="not-found__images">
-            <div class="not-found-image-left">
-              <img src="img/404-1.svg" alt="">
-            </div>
-            <div class="not-found-image-right">
-              <img src="img/404-2.svg" alt="">
+    <!-- LOADER -->
+    <div id="loader-wrapper"></div>
+
+    <div id="content-block">
+
+        <!-- HEADER -->
+        <header>
+            <?php include '_header.php';?>
+        </header>
+
+        <!-- NOT FOUND -->
+        <div class="section not-found">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12 col-xl-10 offset-xl-1">
+                        <div class="content-block title-shortcode text-center">
+                            <div class="not-found-img1">
+                                <img src="img/not-found-img1.png" alt="img">
+                            </div>
+                            <div class="not-found-img2">
+                                <img src="img/not-found-img2.png" alt="img">
+                            </div>
+                            <div class="title h3">Помилка!<br> Сторінку не знайдено...</div>
+                            <a href="index.php" class="btn type3">повернутись на головну</a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-        <h4>Page not found</h4>
-          <div class="text text-s">
-            We’re sorry, the page you requested could not be found. <br> Please go back to the home page
-          </div>
-          <div>
-            <a href="index.php" class="button">Go to home page</a>
-          </div>
-      </section>
-      <!-- FOOTER -->
-      <?php include '_footer.php';?>
-    
+
+        <!-- FOOTER -->
+        <footer>
+            <?php include '_footer.php';?>
+        </footer>
+
+        <!-- POPUP -->
+        <div class="popup-wrapper" id="popups"></div>
+
     </div>
-    
-
-    <!-- POPUP -->
-    <div class="popup-wrapper">
-    </div>
-
-  </div>
-
-  <?php include '_bottom.php';?>
 
 
 </body>
+
 </html>

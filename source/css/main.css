@@ -227,6 +227,7 @@ header.scrolled{box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);}
 .home-banner .banner-content .title{font-weight:300;}
 .home-banner .banner-content .title b{font-weight:900;}
 .home-banner .banner-content .text{max-width:420px;}
+.banner-align .bg.mobile{display:none;}
 .video{position: absolute;top: 0;bottom: 0;left: 0;right: 0;clip: rect(auto,auto,auto,auto);display:none;}
 .video video{position: fixed;left: 50%;top: 50%;min-width: 100%;min-height: 100%;width: auto;height: auto;transform: translate(-50%,-50%);}
 .video-present .video{display: block;overflow: hidden;}
@@ -245,4 +246,6 @@ header.scrolled{box-shadow: 0 3px 6px 0 rgb(0 0 0 / 5%);}
   .banner-align.full-h{height:33vh;padding:20px 0;}
   .banner + *{margin-top:50px;}
   .banner-align.size2{height:300px;}
+  .banner-align .bg.mobile,.home-banner .banner-align .bg.mobile{display:block;}
+
 }

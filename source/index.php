@@ -28,10 +28,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <div class="banner-align full-h">
-                                <div class="bg" style="background-image: url(img/main-slide1.jpg);"
-                                    data-swiper-parallax="30%" data-swiper-parallax-scale="1.25"></div>
-                                <div class="bg mobile" style="background-image: url(img/main-slide1.jpg);"
-                                    data-swiper-parallax="30%" data-swiper-parallax-scale="1.25"></div>
+                                <div class="bg" style="background-image: url(img/simple-img.jpg);"></div>
+                                <div class="bg mobile" style="background-image: url(img/simple-img.jpg);"></div>
                                 <div class="opacity opacity-left-right"></div>
                                 <div class="container">
                                     <div class="row">
@@ -46,8 +44,9 @@
                         </div>
                         <div class="swiper-slide">
                             <div class="banner-align full-h">
+                                <div class="bg" style="background-image: url(img/simple-img.jpg);"></div>
+                                <div class="bg mobile" style="background-image: url(img/simple-img.jpg);"></div>
                                 <div class="opacity opacity-left-right"></div>
-
                             </div>
                         </div>
                     </div>
