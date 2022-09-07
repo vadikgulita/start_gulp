@@ -31,8 +31,7 @@ gulp.task(`copy`, () => {
         `source/**/*.js`,
         `source/.htaccess`,
         `source/**/*.json`,
-      ],
-      {
+      ], {
         base: `source`,
       }
     )
@@ -63,18 +62,21 @@ gulp.task(`js`, () => {
 gulp.task(`css`, () => {
   return (
     gulp
-      .src(`source/**/*.css`)
-      // .pipe(plumber())
-      .pipe(
-        postcss([
-          autoprefixer({
-            overrideBrowserslist: ["last 5 versions"],
-          }),
-        ])
-      )
-      .pipe(cleanCSS({ format: "keep-breaks", level: 0 }))
-      .pipe(gulp.dest(`build/`))
-      .pipe(server.stream())
+    .src(`source/**/*.css`)
+    // .pipe(plumber())
+    .pipe(
+      postcss([
+        autoprefixer({
+          overrideBrowserslist: ["last 5 versions"],
+        }),
+      ])
+    )
+    .pipe(cleanCSS({
+      format: "keep-breaks",
+      level: 0
+    }))
+    .pipe(gulp.dest(`build/`))
+    .pipe(server.stream())
   );
 });
 gulp.task(`scss`, () => {
@@ -82,7 +84,10 @@ gulp.task(`scss`, () => {
     .src(`source/**/*.scss`)
     .pipe(sass().on("error", sass.logError))
     .pipe(postcss([autoprefixer()]))
-    .pipe(cleanCSS({ format: "keep-breaks", level: 0 }))
+    .pipe(cleanCSS({
+      format: "keep-breaks",
+      level: 0
+    }))
     .pipe(gulp.dest(`build/`))
     .pipe(server.stream());
 });
@@ -110,7 +115,9 @@ gulp.task(`images`, () => {
 gulp.task(`webp`, () => {
   return gulp
     .src([`build/img/**/*.{png,jpg}`])
-    .pipe(imageminWEBP({ quality: 70 }))
+    .pipe(imageminWEBP({
+      quality: 70
+    }))
     .pipe(gulp.dest(`build/img`));
 });
 
@@ -126,7 +133,7 @@ gulp.task(`server`, function () {
     open: true,
     cors: true,
     ui: false,
-    proxy: "http://localhost:3002/build/",
+    proxy: "gulp.start",
   });
 
   gulp.watch(`source/**/*.css`, gulp.series(`css`));
