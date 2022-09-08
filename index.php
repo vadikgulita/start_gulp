@@ -16,7 +16,6 @@
 
       <!-- CONTENT -->
       <main>
-
       </main>
 
       <!-- FOOTER -->
