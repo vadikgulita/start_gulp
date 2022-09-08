@@ -3,7 +3,7 @@
 
 <head>
    <?php include 'inc/_top.php';?>
-   <title>The Name of The Site :: Home page</title>
+   <title>The New Project :: Home page</title>
 </head>
 
 <body>
