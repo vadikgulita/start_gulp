@@ -32,10 +32,10 @@
                     <div class="col-12 col-xl-10 offset-xl-1">
                         <div class="content-block title-shortcode text-center">
                             <div class="not-found-img1">
-                                <img src="img/not-found-img1.png" alt="img">
+                                <img src="img/not-found-img1.png" alt="img" loading="lazy">
                             </div>
                             <div class="not-found-img2">
-                                <img src="img/not-found-img2.png" alt="img">
+                                <img src="img/not-found-img2.png" alt="img" loading="lazy">
                             </div>
                             <div class="title h3">Помилка!<br> Сторінку не знайдено...</div>
                             <a href="index.php" class="btn type3">повернутись на головну</a>

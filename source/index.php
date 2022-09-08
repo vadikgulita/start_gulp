@@ -63,6 +63,7 @@
                         <div class="title-shortcode text-center">
                             <div class="title h1">Title</div>
                             <a href="simple-page.php" class="btn color2">Simple page</a>
+                            <button class="btn open-popup" data-rel="1">POPUP</button>
                         </div>
                     </div>
                 </div>
@@ -88,7 +89,7 @@
                                 <picture>
                                     <source srcset="img/simple-img.jpg" type="image/jpeg">
                                     <source srcset="img/simple-img.webp" type="image/webp">
-                                    <img src="img/simple-img.jpg" alt="img">
+                                    <img src="img/simple-img.jpg" alt="img" loading="lazy">
                                 </picture>
                             </div>
                         </div>
@@ -97,7 +98,7 @@
                                 <picture>
                                     <source srcset="img/simple-img.jpg" type="image/jpeg">
                                     <source srcset="img/simple-img.webp" type="image/webp">
-                                    <img src="img/simple-img.jpg" alt="img">
+                                    <img src="img/simple-img.jpg" alt="img" loading="lazy">
                                 </picture>
                             </div>
                         </div>
@@ -106,7 +107,7 @@
                                 <picture>
                                     <source srcset="img/simple-img.jpg" type="image/jpeg">
                                     <source srcset="img/simple-img.webp" type="image/webp">
-                                    <img src="img/simple-img.jpg" alt="img">
+                                    <img src="img/simple-img.jpg" alt="img" loading="lazy">
                                 </picture>
                             </div>
                         </div>
